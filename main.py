@@ -1,16 +1,16 @@
 from pyscript import document, display
 
-names = ['Enzo Ruiz', 'Logan Anaque', 'Johanna Ramos', 'Joshua Ortiz', 'Renn Santos', 'Jhoana Evangelista']
+names = ['Enzo Ruiz', 'Logan Anaque', 'Johanna Ramos', 'Joshua Ortiz', 'Renn Santos', 'Jhoana Evangelista'] #members of ict club
 
 def check_name(e):
     
-    document.getElementById("output1").innerHTML = " "
+    document.getElementById("output1").innerHTML = " " 
 
     first_name = document.getElementById("first_name").value
     last_name = document.getElementById("last_name").value
 
     full_name = first_name + " " + last_name
-    is_name = full_name in names
+    is_name = full_name in names # checks if value exists in lists
 
     message = {
         True: "Congratulations " + full_name + "! You are now part of the ICT club.",
