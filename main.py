@@ -4,12 +4,12 @@ names = ['Enzo Ruiz', 'Logan Anaque', 'Johanna Ramos', 'Joshua Ortiz', 'Renn San
 
 def check_name(e):
     
-    document.getElementById("output1").innerHTML = " " 
+    document.getElementById("output1").innerHTML = " " #clears previous output
 
     first_name = document.getElementById("first_name").value
     last_name = document.getElementById("last_name").value
 
-    full_name = first_name + " " + last_name
+    full_name = first_name + " " + last_name #combines the first and last name together
     is_name = full_name in names # checks if value exists in lists
 
     message = {
