@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://pyscript.net/releases/2024.3.1/core.css" />
+<script type="module" src="https://pyscript.net/releases/2024.3.1/core.js"></script>
+<title>ICT SW 1</title>
+
+<style>
+
+    body {
+        background-color: #2457a7;
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+    button {
+            width: 100%;
+            height: 45px;
+            padding: 12px;
+            margin-top: 20px;
+            background-color: #2457a7;
+            color: white;
+            border-radius: 7px;
+            font-size: 16px;
+        }
+
+    input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 7px;
+            box-sizing: border-box;
+            font-size: 15px;
+        }
+
+    .container {
+            background-color: rgb(221, 230, 236);
+            width: 100%;
+            max-width: 380px;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+
+        }
+
+    #output1 {
+            margin-top: 20px;
+            padding: 12px;
+            background-color: #f0f5ff;
+            border-radius: 7px;
+            color: #333;
+        }
+
+    
+
+
+
+</style>
+
+</head>
+
+<body>
+
+   <div class="container">
+    <center>
+        <h1 style="color: #2457a7; margin-bottom: 10px;">ICT Club Checker</h1>
+        <p style="color: #666666; margin-bottom: 25px;">Candidate Verification System</p>
+       
+        <input type="text" id="first_name" placeholder="Enter your first name">
+        <br>
+
+        <input type="text" id="last_name" placeholder="Enter your last name">
+        <br>
+
+
+        <button id="check_button" py-click="check_name">Enter</button>
+
+        <div id="output1">
+            Your result will appear here.
+        </div>
+
+    </div>
+
+
+
+    <script type="py" src="main.py"></script>
+
+</body>
+</html>
